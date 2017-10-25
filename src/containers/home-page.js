@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class HomePage extends Component {
   render () {
     return (
-      <div>
+      <div className="app-body">
         <p>This is a sandpit where I test and make notes on various third part React components.</p>
         <p>It uses the create-react-app boilerplate and the following packages;</p>
         <ul>

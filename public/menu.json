@@ -1,15 +1,15 @@
 [{
   "label": "react-burger-menu",
   "icon": "fa-star-o",
-  "href": "/displaygridemo"
+  "href": "/react-burger-menu"
 }, {
   "label": "react-grid-layout",
   "icon": "fa-bell-o",
-  "href": "/displaygridemo"
+  "href": "/react-grid-layout"
 }, {
-  "label": "Messages",
+  "label": "react-beautiful-dnd",
   "icon": "fa-envelope-o",
-  "href": ""
+  "href": "/react-beautiful-dnd"
 }, {
   "label": "Comments",
   "icon": "fa-comment-o",

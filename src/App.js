@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import HomePage from './containers/home-page';
-import BurgerMenuDemo from './containers/burger-menu-demo';
-import DisplayGridDemo from './containers/display-grid-demo';
+import SiteMenu from './containers/site-menu';
+import ReactBurgerMenu from './containers/react-burger-menu';
+import ReactGridLayout from './containers/react-grid-layout';
+import ReactBeautifulDND from './containers/react-beautiful-dnd';
 
 import './styles/site.css';
 
@@ -18,7 +20,7 @@ class App extends Component {
 
   componentDidMount() {
     // load menu options
-    axios.get("menu.json")
+    axios.get("/menu.json")
     .then((res) => {
       this.setState({menuOptions:  res.data});
     })
@@ -31,13 +33,14 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
-          <BurgerMenuDemo title="Menu" options={this.state.menuOptions}/>
+          <SiteMenu title="Home" options={this.state.menuOptions}/>
           <header className="App-header">
             <h1 className="App-title">my-react-sandpit</h1>
           </header>
           <Route exact path="/" component={HomePage}/>
-          <Route path="/displaygridemo" component={DisplayGridDemo}/>
-          {/* <Route path="/video/:id" component={Video}/> */}
+          <Route path="/react-burger-menu" component={ReactBurgerMenu}/>
+          <Route path="/react-grid-layout" component={ReactGridLayout}/>
+          <Route path="/react-beautiful-dnd" component={ReactBeautifulDND}/>          
         </div>
       </Router>
     );

@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 
 class DisplayGrid extends Component {
-  constructor(props) {
-    super(props);
-  }
   render() {
     var gridStyle = {
       height:'100%',
