@@ -35,7 +35,7 @@ class App extends Component {
         <div className="App">
           <SiteMenu title="Home" options={this.state.menuOptions}/>
           <header className="App-header">
-            <h1 className="App-title">my-react-sandpit</h1>
+            <h1 className="App-title">my-react-sandbox</h1>
           </header>
           <Route exact path="/" component={HomePage}/>
           <Route path="/react-burger-menu" component={ReactBurgerMenu}/>

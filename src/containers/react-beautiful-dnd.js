@@ -1,8 +1,7 @@
 import React, {Component} from 'react';
 import {DragDropContext, Droppable, Draggable} from 'react-beautiful-dnd';
-import Subheader from './../components/subheader';
+import SandboxComponent from './../components/sandbox-component';
 import './../styles/site.css';
-
 
 // fake data generator
 const getItems = count =>
@@ -42,12 +41,12 @@ const getListStyle = isDraggingOver => ({
   width: 250,
 });
 
-class ReactBeautifulDND extends Component {
+class ReactBeautifulDND extends SandboxComponent {
   constructor(props) {
     super(props);
     this.state = {
-      items: getItems(10),
-      mode: this.props.match.params.mode
+      title: 'react-beautiful-dnd',
+      items: getItems(10)
     };
     this.onDragEnd = this.onDragEnd.bind(this);
   }
@@ -102,16 +101,6 @@ class ReactBeautifulDND extends Component {
         </Droppable>
       </DragDropContext>
     )
-  }
-
-  render() {
-    let content = (this.state.mode === 'demo') ? this.renderDemo() : this.renderNotes();
-    return (
-      <div>
-        <Subheader label='react-beautiful-dnd' toggleModeEvent={((mode) => this.setState({mode}))}/>
-        {content}
-      </div>
-    );
   }
 }
 

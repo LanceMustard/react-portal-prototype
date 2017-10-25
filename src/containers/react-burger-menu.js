@@ -7,7 +7,6 @@ class ReactBurgerMenuNotes extends SandboxComponent {
     super(props);
     this.state = {
       title: 'react-burger-menu'
-      // mode: this.props.match.params.mode || 'notes'
     };
   }
 
@@ -23,16 +22,6 @@ class ReactBurgerMenuNotes extends SandboxComponent {
       </div>
     );
   }
-
-  // render() {
-  //   let content = (this.state.mode === 'demo') ? this.renderDemo() : this.renderNotes();
-  //   return (
-  //     <div>
-  //       <Subheader label='react-burger-menu' toggleModeEvent={((mode) => this.setState({mode}))}/>
-  //       {content}
-  //     </div>
-  //   );
-  // }
 
 }
 
