@@ -1,0 +1,25 @@
+[{
+  "label": "react-burger-menu",
+  "icon": "fa-star-o",
+  "href": "/displaygridemo"
+}, {
+  "label": "react-grid-layout",
+  "icon": "fa-bell-o",
+  "href": "/displaygridemo"
+}, {
+  "label": "Messages",
+  "icon": "fa-envelope-o",
+  "href": ""
+}, {
+  "label": "Comments",
+  "icon": "fa-comment-o",
+  "href": ""
+}, {
+  "label": "Analytics",
+  "icon": "fa-bar-chart-o",
+  "href": ""
+}, {
+  "label": "Reading List",
+  "icon": "fa-newspaper-o",
+  "href": ""
+}]

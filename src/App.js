@@ -1,66 +1,45 @@
 import React, { Component } from 'react';
-import ReactGridLayout from 'react-grid-layout';
+import axios from 'axios';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
-import DisplayGrid from './components/display-grid.js';
+import HomePage from './containers/home-page';
+import BurgerMenuDemo from './containers/burger-menu-demo';
+import DisplayGridDemo from './containers/display-grid-demo';
 
-import './App.css';
-import '../node_modules/react-grid-layout/css/styles.css';
-import '../node_modules/react-resizable/css/styles.css';
+import './styles/site.css';
 
 class App extends Component {
   constructor(props) {
     super(props);
-
     this.state = {
-      layout: [
-        {i: 'a', x: 0, y: 0, w: 4, h: 10},
-        {i: 'b', x: 4, y: 0, w: 4, h: 10},
-        {i: 'c', x: 8, y: 0, w: 4, h: 10}
-      ],
-      maximised: false
+      menuOptions: []
     };
-
-    this.test = this.test.bind(this);
   }
 
-  test() {
-    var layout = {};
-    if (this.state.maximised) {
-      layout = [
-        {i: 'a', x: 0, y: 0, w: 4, h: 10},
-        {i: 'b', x: 4, y: 0, w: 0, h: 10},
-        {i: 'c', x: 4, y: 0, w: 8, h: 10}
-      ];
-    } else {
-      layout = [
-        {i: 'a', x: 0, y: 0, w: 4, h: 10},
-        {i: 'b', x: 4, y: 0, w: 4, h: 10},
-        {i: 'c', x: 8, y: 0, w: 4, h: 10}
-      ];
-    }
-    this.setState({
-      layout,
-      maximised: !this.state.maximised});
-  };
+  componentDidMount() {
+    // load menu options
+    axios.get("menu.json")
+    .then((res) => {
+      this.setState({menuOptions:  res.data});
+    })
+    .catch((err) => {
+      console.log('[Error] Menu loading', err);
+    });
+  }
 
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <h1 className="App-title">Some silly Portal</h1>
-          <button onClick={this.test}>Test</button>
-        </header>
-        <ReactGridLayout
-          className="layout"
-          layout={this.state.layout}
-          cols={12}
-          rowHeight={30}
-          width={1200}>
-          <div className="App-widget" key="a"><DisplayGrid/></div>
-          <div className="App-widget" key="b"><DisplayGrid/></div>
-          <div className="App-widget" key="c"><DisplayGrid/></div>
-        </ReactGridLayout>
-      </div>
+      <Router>
+        <div className="App">
+          <BurgerMenuDemo title="Menu" options={this.state.menuOptions}/>
+          <header className="App-header">
+            <h1 className="App-title">my-react-sandpit</h1>
+          </header>
+          <Route exact path="/" component={HomePage}/>
+          <Route path="/displaygridemo" component={DisplayGridDemo}/>
+          {/* <Route path="/video/:id" component={Video}/> */}
+        </div>
+      </Router>
     );
   }
 }
