@@ -6,6 +6,7 @@
     "axios": "^0.17.0",
     "highcharts": "^6.0.1",
     "react": "^16.0.0",
+    "react-accessible-accordion": "^1.0.1",
     "react-beautiful-dnd": "^2.4.1",
     "react-burger-menu": "^2.1.9",
     "react-dom": "^16.0.0",

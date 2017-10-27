@@ -7,8 +7,8 @@ class HomePage extends Component {
         <p>This is a sandbox where I play around, test and make notes on various third party React components.</p>
         <p>It uses the create-react-app boilerplate and the following packages;</p>
         <ul>
-          <il>axios... used for called webapi's to load data when required</il>
-          <il>react-router-dom... used for page navigation</il>
+          <li>axios... used for called webapi's to load data when required</li>
+          <li>react-router-dom... used for page navigation</li>
         </ul>
       </div>
     );

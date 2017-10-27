@@ -1,0 +1,25 @@
+Gather visitation stats per component, show in a highchart
+* visits count
+* unique visits count
+
+Front page
+* about the site
+* latest blog summaries
+* visitation stats (top views)
+
+Blogs
+* summary (front page)
+* date (grouped per month)
+* detailed - SandboxComponent or Article
+* mongodb store
+
+Code
+* Links to github
+
+Notes 
+* Links to blog
+
+CSS using CSS as JS
+* styled-components
+
+CSS animations

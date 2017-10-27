@@ -11,9 +11,9 @@
   "icon": "fa-envelope-o",
   "href": "/react-beautiful-dnd"
 }, {
-  "label": "Comments",
+  "label": "react-accessible-accordion",
   "icon": "fa-comment-o",
-  "href": ""
+  "href": "/react-accessible-accordion"
 }, {
   "label": "Analytics",
   "icon": "fa-bar-chart-o",

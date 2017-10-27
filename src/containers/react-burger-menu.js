@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import SandboxComponent from './../components/sandbox-component';
 import './../styles/site.css';
 
-class ReactBurgerMenuNotes extends SandboxComponent {
+class ReactBurgerMenu extends SandboxComponent {
   constructor(props) {
     super(props);
     this.state = {
@@ -25,4 +25,4 @@ class ReactBurgerMenuNotes extends SandboxComponent {
 
 }
 
-export default ReactBurgerMenuNotes;
+export default ReactBurgerMenu;
