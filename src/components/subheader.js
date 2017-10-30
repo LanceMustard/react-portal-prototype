@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
+import ToggleButton from './ToggleButton';
 import './../styles/site.css';
 
-class Subheader extends Component {
+class SubHeader extends Component {
   constructor(props) {
     super(props);
 
@@ -16,15 +17,19 @@ class Subheader extends Component {
   }
 
   render() {
+    
     return (
       <div className="app-subheader">
         <label>{this.props.label} </label>
-        <a className={`side-button left ${(this.state.mode === 'notes') ? 'active' : ''}`} onClick={this.toggleMode.bind(this, 'notes')}>Notes</a>
+        <ToggleButton left active={`${(this.state.mode === 'notes') ? true : false}`} onClick={this.toggleMode.bind(this, 'notes')}>Notes</ToggleButton>
+        <ToggleButton active={`${(this.state.mode === 'demo') ? true : false}`} onClick={this.toggleMode.bind(this, 'demo')}>Demo</ToggleButton>
+        <ToggleButton right active={`${(this.state.mode === 'code') ? true : false}`} onClick={this.toggleMode.bind(this, 'code')}>Code</ToggleButton>
+        {/* <a className={`side-button left ${(this.state.mode === 'notes') ? 'active' : ''}`} onClick={this.toggleMode.bind(this, 'notes')}>Notes</a>
         <a className={`side-button ${(this.state.mode === 'demo') ? 'active' : ''}`} onClick={this.toggleMode.bind(this, 'demo')}>Demo</a>
-        <a className={`side-button right ${(this.state.mode === 'code') ? 'active' : ''}`} onClick={this.toggleMode.bind(this, 'code')}>Code</a>
+        <a className={`side-button right ${(this.state.mode === 'code') ? 'active' : ''}`} onClick={this.toggleMode.bind(this, 'code')}>Code</a> */}
       </div>
     );
   }
 }
 
-export default Subheader;
+export default SubHeader;

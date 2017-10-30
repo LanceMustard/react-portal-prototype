@@ -65,10 +65,10 @@
   margin: 10px;
 }
 
-.side-button {
+/* .side-button {
   display: inline-block;
-  width: 5em;
-  height: 2.5em;
+  min-width: 5em;
+  min-height: 2.5em;
   line-height: 2.5em;
   cursor: pointer;
   background: #fffce1;
@@ -91,4 +91,4 @@
 .side-button.active {
   background: #c94e50;
   color: #fffce1;
-}
+} */

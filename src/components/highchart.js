@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Highcharts from 'highcharts';
 
-class Highchart extends Component {
+class HighChart extends Component {
     componentDidMount() {
       // Extend Highcharts with modules
       if (this.props.modules) {
@@ -25,4 +25,4 @@ class Highchart extends Component {
     }
 }
 
-export default Highchart;
+export default HighChart;

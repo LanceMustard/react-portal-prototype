@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import SandboxComponent from './../components/sandbox-component';
+import React from 'react';
+import SandboxComponent from './../components/SandboxComponent';
 import {Accordion, AccordionItem, AccordionItemTitle, AccordionItemBody} from 'react-accessible-accordion';
 
 import './../../node_modules/react-accessible-accordion/dist/react-accessible-accordion.css';

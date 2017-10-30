@@ -1,6 +1,6 @@
-import React, {Component} from 'react';
+import React from 'react';
 import {DragDropContext, Droppable, Draggable} from 'react-beautiful-dnd';
-import SandboxComponent from './../components/sandbox-component';
+import SandboxComponent from './../components/SandboxComponent';
 import './../styles/site.css';
 
 // fake data generator

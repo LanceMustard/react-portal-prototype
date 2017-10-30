@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import ReactGridLayout from 'react-grid-layout';
-import SandboxComponent from './../components/sandbox-component';
-import DisplayGrid from './../components/display-grid.js';
+import SandboxComponent from './../components/SandboxComponent';
+import DisplayGrid from './../components/DisplayGrid.js';
 import './../styles/site.css';
 import '../../node_modules/react-grid-layout/css/styles.css';
 import '../../node_modules/react-resizable/css/styles.css';

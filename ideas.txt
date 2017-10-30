@@ -23,3 +23,7 @@ CSS using CSS as JS
 * styled-components
 
 CSS animations
+
+Naming convensions
+* React component files, start with Initial Cap
+* javascript files, lower case

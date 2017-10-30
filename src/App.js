@@ -2,12 +2,14 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
-import HomePage from './containers/home-page';
-import SiteMenu from './containers/site-menu';
-import ReactBurgerMenu from './containers/react-burger-menu';
-import ReactGridLayout from './containers/react-grid-layout';
-import ReactBeautifulDND from './containers/react-beautiful-dnd';
-import ReactAccessibleAccordion from './containers/react-accessible-accordion';
+import HomePage from './containers/HomePage';
+import SiteMenu from './containers/SiteMenu';
+import ReactBurgerMenu from './containers/ReactBurgerMenu';
+import ReactGridLayout from './containers/ReactGridLayout';
+import ReactBeautifulDND from './containers/ReactBeautifulDND';
+import ReactAccessibleAccordion from './containers/ReactAccessibleAccordion';
+import StyledComponents from './containers/StyledComponents';
+import SVGBreathingPolygon from './containers/SVGBreathingPolygon';
 
 import './styles/site.css';
 
@@ -44,6 +46,8 @@ class App extends Component {
             <Route path="/react-grid-layout" component={ReactGridLayout}/>
             <Route path="/react-beautiful-dnd" component={ReactBeautifulDND}/>
             <Route path="/react-accessible-accordion" component={ReactAccessibleAccordion}/>
+            <Route path="/styled-components" component={StyledComponents}/>
+            <Route path="/svg-breathing-polygon" component={SVGBreathingPolygon}/>
           </div>
         </div>
       </Router>

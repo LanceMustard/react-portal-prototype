@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Subheader from './../components/subheader';
+import SubHeader from './../components/SubHeader';
 import './../styles/site.css';
 
 class SandboxComponent extends Component {
@@ -52,7 +52,7 @@ class SandboxComponent extends Component {
     }
     return (
       <div>
-        <Subheader label={this.state.title} toggleModeEvent={((mode) => this.setState({mode}))}/>
+        <SubHeader label={this.state.title} toggleModeEvent={((mode) => this.setState({mode}))}/>
         {content}
       </div>
     );

@@ -15,11 +15,11 @@
   "icon": "fa-comment-o",
   "href": "/react-accessible-accordion"
 }, {
-  "label": "Analytics",
+  "label": "styled-components",
   "icon": "fa-bar-chart-o",
-  "href": ""
+  "href": "/styled-components"
 }, {
-  "label": "Reading List",
+  "label": "svg-breathing-polygon",
   "icon": "fa-newspaper-o",
-  "href": ""
+  "href": "/svg-breathing-polygon"
 }]

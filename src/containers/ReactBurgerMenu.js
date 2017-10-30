@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import SandboxComponent from './../components/sandbox-component';
+import React from 'react';
+import SandboxComponent from './../components/SandboxComponent';
 import './../styles/site.css';
 
 class ReactBurgerMenu extends SandboxComponent {
